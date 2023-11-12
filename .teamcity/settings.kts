@@ -57,6 +57,13 @@ object Build : BuildType({
             }
             goals = "clean test"
         }
+        maven {
+
+            conditions {
+                equals("teamcity.build.branch", "master")
+            }
+            goals = "clean package"
+        }
     }
 
     triggers {
