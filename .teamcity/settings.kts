@@ -60,6 +60,7 @@ object Build : BuildType({
             goals = "clean test"
         }
         maven {
+            executionMode = BuildStep.ExecutionMode.ALWAYS
 
             conditions {
                 equals("teamcity.build.branch", "master")
