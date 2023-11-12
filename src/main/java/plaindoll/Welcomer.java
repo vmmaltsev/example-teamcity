@@ -14,6 +14,6 @@ public class Welcomer{
 		return "something in the way";
 	}
 	public String getHunterMessage() {
-    return "A message containing the word hunter.";
+    	return "A message containing the word hunter.";
 	}
 }
